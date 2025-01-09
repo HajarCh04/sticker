@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="header_text">What food do you like to eat?</h1>
+    <div class="food_options">
+      <div class="food_item" onclick="toggleSelection(this)">
+        <img src="images/download (1).jpg" alt="Food 1" class="food_image">
+        <div class="checkmark">✔</div>
+      </div>
+      <div class="food_item" onclick="toggleSelection(this)">
+        <img src="images/download (2).jpg" alt="Food 2" class="food_image">
+        <div class="checkmark">✔</div>
+      </div>
+      <div class="food_item" onclick="toggleSelection(this)">
+        <img src="images/download.jpg" alt="Food 3" class="food_image">
+        <div class="checkmark">✔</div>
+      </div>
+      <div class="food_item" onclick="toggleSelection(this)">
+        <img src="images/images (1).jpg" alt="Food 4" class="food_image">
+        <div class="checkmark">✔</div>
+      </div>
+      <div class="food_item" onclick="toggleSelection(this)">
+        <img src="images/images (2).jpg" alt="Food 5" class="food_image">
+        <div class="checkmark">✔</div>
+      </div>
+      <div class="food_item" onclick="toggleSelection(this)">
+        <img src="images/images.jpg" alt="Food 6" class="food_image">
+        <div class="checkmark">✔</div>
+      </div>
+    </div>
+    <button class="btn" onclick="goToThankYouPage()">Done</button>
+  </div>
+  <script>
+    function toggleSelection(element) {
+      element.classList.toggle("selected");
+    }
+
+    function goToThankYouPage() {
+      window.location.href = "love.html";
+    }
+  </script>
+</body>
+
+</html>
